@@ -7,7 +7,7 @@ from System.Data.OleDb import OleDbConnection, OleDbDataAdapter, OleDbCommand
 
 class class1(object):
     #WORK_SKO/WORK_SKO@bvn002b.bbdo.local/PRDBATCH
-    conStr = "Provider=MSDAORA.1;User ID=WORK_SKO;Password=WORK_SKO;Persist Security Info=False"
+    conStr = "Provider=OraOLEDB.Oracle;Data Source=;User Id=DRUGO73;Password=lokomotiv1970;"
 
     con = OleDbConnection(conStr)
 
