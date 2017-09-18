@@ -27,6 +27,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="conexionOracle.py" />
+    <Compile Include="OracleConnection.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="conexionOracle.xaml">
