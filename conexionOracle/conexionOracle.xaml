@@ -3,6 +3,6 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
        Title="conexionOracle" Height="300" Width="300"> 
        <Grid>
-        <DataGrid HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="166" Width="273"/>
+        <DataGrid HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="251" Width="273"/>
     </Grid>
 </Window> 
