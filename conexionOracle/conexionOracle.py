@@ -12,6 +12,8 @@ class MyWindow(Window):
         
         wpf.LoadComponent(self, 'conexionOracle.xaml')
         oc = OracleConnection.class1()
+        lista = [ ]
+        lista.append(oc.crearLista())
         self.label1.Content = "Hola"
 
         
