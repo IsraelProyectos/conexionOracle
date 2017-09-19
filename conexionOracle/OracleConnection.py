@@ -23,19 +23,18 @@ class class1(object):
             adapter.Fill(ds, "t1")
 
             lista = [ ]
-
-    
-
-            #for i in range(ds.Tables["t1"].Rows.Count -1):
-            #        lista.append(ds.Tables["t1"].Rows[i][0])
-     
-       
+            
+            for i in range(ds.Tables["t1"].Rows.Count):
+                
+                registro = [ ]
+                registro.append(ds.Tables["t1"].Rows[i][0])
+                registro.append(ds.Tables["t1"].Rows[i][4])
+                registro.append(ds.Tables["t1"].Rows[i][6])
+                lista.append(registro)
             
 
-            for i in range(ds.Tables["t1"].Rows.Count -1):
-                lista.append(ds.Tables["t1"].Rows[i][0])
-                return lista
-        
+                
+            return lista
 
             con.Close()
 

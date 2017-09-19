@@ -3,7 +3,7 @@ import clr
 import OracleConnection
 clr.AddReference("System.Drawing")
 clr.AddReference("System.Windows.Forms")
-from System.Windows.Forms import Application, Button, Form, Label
+from System.Windows.Forms import Application, Button, Form, Label, DataGrid
 from System.Windows import Application, Window
 
 
@@ -12,9 +12,13 @@ class MyWindow(Window):
         
         wpf.LoadComponent(self, 'conexionOracle.xaml')
         oc = OracleConnection.class1()
-        lista = [ ]
-        lista.append(oc.crearLista())
-        self.label1.Content = "Hola"
+        lista = oc.crearLista()
+        
+        
+        
+        for registro in lista:
+            for dato in registro:
+               DataGrid.datagrid1.CurrentCell
 
         
 if __name__ == '__main__':
